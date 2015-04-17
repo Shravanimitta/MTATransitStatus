@@ -12,8 +12,8 @@ var Favs=require('./models/favorites');
 
 //connect to mongoose
 var mongoose = require('mongoose');
-var dbName='MTA';
-var connectionString='mongodb://localhost:27017/'+dbName;
+//var dbName='MTA';
+var connectionString='mongodb://shravani:karnati@ds061611.mongolab.com:61611/heroku_app35979668';
 
 mongoose.connect(connectionString);
 
