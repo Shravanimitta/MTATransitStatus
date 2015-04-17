@@ -1,0 +1,20 @@
+<section>
+	<label for="selectedService" class="select-label">Choose your service<select ng-init="selectedService='All'" id="selectedService" ng-model="selectedService">
+		<option value="All">All Lines</option>
+        <option ng-repeat="service in services" value="{{service.name}}">{{service.name}}</option>
+      </select></label>
+      <p class="pull-right time">Updated on {{updatedTime}}</p>
+
+	<span ng-repeat="service in services" ng-if="service.name == selectedService || selectedService=='All' " class="service">
+		<h3 class="col-md-12 line-status {{service.name}}">{{service.name}} Service Status</h3>
+		<ul class="lines line-titles">
+			<li class="lName">Line Name</li>
+			<li class="lStatus">Status</li>
+		</ul>
+		<ul ng-repeat="lines in serviceData[service.name].line" class="lines">
+		<li class="lName">{{lines.name}}</li>
+		<li class="lStatus"><span class="statusOnly {{lines.status}}">{{lines.status}}</span><span data-ng-bind-html="lines.text" class="lText"></span></li>
+		<button data-ng-show="Session.username()" data-ng-click="addToFavourite($event, lines.name, service.name)" class="fav" data-ng-class="{'selected': lines.isFavorite}">&#9733;</button>
+	</ul> 
+	</span>
+</section>

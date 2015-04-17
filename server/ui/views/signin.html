@@ -1,0 +1,18 @@
+<section>
+	<h3 class="col-md-12 text-center">Sign In</h3>
+	<form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
+	<label for="username">Username</label>
+	<input type="text" id="username" name="username"
+	data-ng-model="username" placeholder="Username"
+	data-ng-required="true">
+
+	<label for="password">Password</label>
+	<input type="password" id="password" name="password"
+	data-ng-model="password" placeholder="Password"
+	data-ng-required="true"><br>
+
+	<button type="submit" class="btn btn-primary">Sign in</button>&nbsp; or&nbsp;
+	<a ui-sref="signup">Sign up</a>
+	</form>
+</section>
+

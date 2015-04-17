@@ -1,0 +1,11 @@
+<section>
+	<h2 class="col-md-12 fav-title">Favorites for {{username}}</h2>
+	<span data-ng-repeat="services in favorites.service">
+		<h3 class="col-md-12 line-status {{services.sName}}">{{services.sName}} Service Status</h3>
+		<ul ng-repeat="line in services.lines">
+			<li class="lName">{{line.lName}}</li>
+			<li class="lStatus"><span class="statusOnly {{line.lStatus}}">{{line.lStatus}}</span><span data-ng-bind-html="line.text" class="lText"></span></li>
+		</ul> 
+	</span>
+	<span ng-show="nofavs" class="nofavs">No Favorites have been added yet. You can add them from the Services view.</span>
+</section>

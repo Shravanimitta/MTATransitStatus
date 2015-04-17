@@ -1,0 +1,289 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", Helvetica, Arial, Sans-serif;
+    font-weight: lighter;
+}
+
+.navbar-brand a {
+      color: #fff;
+      text-decoration: none;
+}
+
+.navbar-brand a:hover {
+    color: #f6a01a;
+}
+
+.navbar .navbar-nav>li>a {
+  font-size: 1.2em;
+  padding-top: 20px;
+}
+
+.wrapper .navbar {
+  background: rgb(9,66,113);
+  color: #fff;
+  border-radius: 0;
+  border-top: 0;
+  text-align: center;
+}
+
+.wrapper .navbar-brand {
+  height: auto;
+  margin: 0 20px;
+  margin: 0 20px;
+  font-size: 2em;
+  font-variant: small-caps;
+  float: none;
+}
+
+a:hover {
+color: #23527c;
+cursor: pointer;
+text-decoration: none;
+}
+
+.wrapper .signout, .wrapper .username {
+  display: none;
+}
+
+.loggedin .signout, .loggedin .username {
+display: block;
+}
+
+.loggedin .signin {
+display: none;
+}
+
+li.username {
+  padding-top: 18px;
+  text-transform: capitalize;
+  padding-right: 10px;
+  font-size: 1.2em;
+}
+
+select {
+    padding: 3px;
+    margin: 0;   
+    background: #fff;
+    color: #444;
+    border: 1px solid #ddd;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    -webkit-border-radius: 0px;
+}
+
+select {
+    padding: 3px;
+    margin: 0;   
+    background: #fff;
+    color: #444;
+    border: 1px solid #ddd;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    -webkit-border-radius: 0px;
+    width: 120px;
+    margin-left: 5px;
+}
+
+.select-label {
+  position: relative;
+}
+.select-label:after {
+  content: '< >';
+  font: 9px "Consolas", monospace;
+  color: #aaa;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 2px; 
+  top: 9px;
+  padding: 0px 2px 4px;
+  position: absolute;
+  pointer-events: none;
+  margin-top: -2px;
+}
+
+.select-label:before {
+  content: '';
+  right: 1px; 
+  top: 1px;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  pointer-events: none;
+  display: block;
+  background: #fff;
+}
+
+.time {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.fav
+{
+ color: #ddd;
+ background: none;
+ border: 0;
+ font-size: 1.6em;
+ position: absolute;
+ top: 50%;
+ line-height: 1;
+ right: 10px;
+ outline: none;
+ margin-top: -0.5em;
+}
+
+.fav.selected
+{
+      color: rgb(255, 194, 0);
+}
+
+.line-status {
+  display: block;
+  background: #f6a01a;
+  padding: 12px 20px;
+  margin-bottom: 0px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.lines.line-titles {
+  background: #eee;
+  font-weight: normal;
+  border: 0;
+}
+
+.lines {
+  clear: both;
+}
+
+.lName {
+  display: inline-block;
+  width: 20%;
+  padding: 10px 20px;
+  font-size: 1.3em;
+}
+
+.lStatus {
+  display: inline-block;
+  width: 80%;
+  margin-left: -4px;
+  padding: 10px;
+  text-align: center;
+  padding-right: 50px;
+  font-size: 0.875em;
+}
+
+.main-content {
+  padding-bottom: 20px;
+}
+
+.main-content ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ position: relative;
+ border-bottom: 1px solid #bbb;
+ background: #FFFFFF;
+ color: #444;
+ clear: both;
+}
+
+.line-status.BT {
+   background: #f6a01a;
+}
+
+.line-status.LIRR {
+   background: #54bceb;
+}
+
+.line-status.MetroNorth {
+   background: #de396e;
+}
+
+.line-status.bus {
+   background: #597729;
+}
+
+.line-status.subway {
+   background: #aa2128;
+}
+
+.fav-title {
+  margin: 0; 
+}
+
+.lText {
+    display: block;
+}
+.lText br {
+    display: none;
+}
+
+.lText .TitleServiceChange, .lText .TitlePlannedWork, .lText .TitleDelay {
+    display: none;
+}
+
+.lText .DateStyle {
+    display: block;
+    font-weight: normal;
+}
+
+.lText * {
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.lText p {
+    margin: 0 !important;
+    display: inline;
+    white-space: normal;
+}
+.statusOnly {
+  font-weight: normal;
+  font-size: 1.3em;
+}
+
+.statusOnly.DELAYS {
+  color: rgb(211, 15, 15);
+}
+
+.line-titles .lStatus {
+  font-size: 1.3em;
+}
+
+.lStatus img {
+  display: none;
+}
+
+form.signin, form.signup {
+    display: block;
+    text-align: center;
+    clear: both;
+    padding-top: 20px;
+}
+form.signin label, form.signup label {
+    display: block;
+}
+
+form.signin input, form.signup input {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.nofavs {
+  margin: 15px;
+  clear: both;
+  display: block;
+  padding: 20px 0;
+  font-size: 1.2em;
+}
