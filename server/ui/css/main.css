@@ -252,7 +252,7 @@ select {
   font-size: 1.3em;
 }
 
-.statusOnly.DELAYS {
+.error, .statusOnly.DELAYS {
   color: rgb(211, 15, 15);
 }
 

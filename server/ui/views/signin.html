@@ -1,6 +1,7 @@
 <section>
 	<h3 class="col-md-12 text-center">Sign In</h3>
 	<form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
+	<p class="error">{{serverMessage}}</p>
 	<label for="username">Username</label>
 	<input type="text" id="username" name="username"
 	data-ng-model="username" placeholder="Username"

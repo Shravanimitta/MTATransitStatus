@@ -2,6 +2,7 @@
 var mtaApp = angular.module('mtaApp');
 
 mtaApp.controller('SignInController', function($scope, $http, $state, $cookies, Session){
+    $scope.serverMessage = "";
     if($cookies.username){
         $state.go("service");
     }
@@ -14,6 +15,9 @@ $scope.password}).success(function(res) {
                 $cookies['username'] = $scope.username;
                 Session.setUsername($cookies['username']);                
                 $state.go("service");
+            }
+            else {
+                $scope.serverMessage = res;
             }
         }).error(function(err){
             //error handling
